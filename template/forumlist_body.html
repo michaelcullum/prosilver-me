@@ -1,0 +1,37 @@
+
+<!-- BEGIN forumrow -->
+
+	<!-- IF (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  -->
+			</ul>
+		</div>
+	<!-- ENDIF -->
+	
+	<!-- IF forumrow.S_IS_CAT or forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT  -->
+		<div class="forabg">
+			<div class="cathead">
+				<!-- IF forumrow.S_IS_CAT --><a href="{forumrow.U_VIEWFORUM}">{forumrow.FORUM_NAME}</a><!-- ELSE -->{L_FORUM}<!-- ENDIF -->
+			</div>
+			<ul>
+	<!-- ENDIF -->
+
+	<!-- IF not forumrow.S_IS_CAT -->
+			<li class="row<!-- IF forumrow.S_LAST_ROW --> lastrow<!-- ENDIF -->">
+				<a href="{forumrow.U_VIEWFORUM}" class="forumtitle">{forumrow.FORUM_NAME}</a><br />
+				<span class="details">{L_POSTS}: {forumrow.POSTS}
+				| {L_TOPICS}: {forumrow.TOPICS}
+				<!-- IF forumrow.LAST_POST_TIME -->| {L_LAST_POST} {L_POST_BY_AUTHOR} {forumrow.LAST_POSTER_FULL}<!-- ENDIF --></span>
+			</li>
+	<!-- ENDIF -->
+	
+	<!-- IF forumrow.S_LAST_ROW -->
+			</ul>
+		</div>
+	<!-- ENDIF -->
+	
+<!-- BEGINELSE -->
+	<div class="panel">
+		<div class="inner"><span class="corners-top"><span></span></span>
+		<strong>{L_NO_FORUMS}</strong>
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+<!-- END forumrow -->

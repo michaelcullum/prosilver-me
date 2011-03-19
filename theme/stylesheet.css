@@ -1,0 +1,88 @@
+/* prosilver Mobile Eddition */
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	font-size:100%;
+	-webkit-text-size-adjust: none !important;
+	display: block;
+}
+
+body {
+	font-family:Verdana,Helvetica,Arial,sans-serif;
+	margin:0;
+	padding:0;
+	-webkit-text-size-adjust: none !important;
+	width: 100%;
+	display: block;
+}
+
+h1 {
+	font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:1.8em;
+	margin-left:10px;
+	padding-top: 6px;
+	text-shadow: #1e6589 1px 1px 2px;
+}
+
+h2{
+}
+
+/* links */
+a:link	{ color: #105289; text-decoration: none; }
+a:visited	{ color: #105289; text-decoration: none; }
+a:hover	{ color: #D31141; text-decoration: underline; }
+a:active	{ color: #368AD2; text-decoration: none; }
+
+h1 a:link,h1 a:visited,h1 a:hover,h1 a:active,.cathead a:link,.cathead a:visited { color: #FFFFFF; text-decoration: none; }
+.cathead a:hover, .cathead a:active  { color: #FFFFFF; text-decoration: underline; }
+
+/* blocks */
+.headerbar {
+	background-color: #12A3EB;
+	background-image: url("{T_THEME_PATH}/images/bg_header.gif");
+	color: #FFFFFF;
+	height: 50px;
+}
+
+.navbar {
+	background-color: #cadceb;
+	padding: 5px 10px 5px;
+	margin-bottom: 10px;
+}
+
+/* forumview */
+.cathead {
+	background-color: #12A3EB;
+	background-image: url("{T_THEME_PATH}/images/bg_header.gif");
+	height:30px;
+}
+
+.cathead a {
+	padding: 6px 0 6px 10px;
+	height: 18px;
+	display:block;
+}
+
+.row {
+	padding: 10px 0 10px 10px;
+	border-bottom: 1px solid #666;
+}
+
+.row a {
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+.lastrow {
+	border-bottom: none;
+}
+
+.details {
+	font-size: 10pt;
+	color: #666;
+}
